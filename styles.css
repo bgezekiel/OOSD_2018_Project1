@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+}
+
+.jumbotron {
+    background-image: url("hero.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+
+.container{
+    color: white;
+}
+
+.card-group {
+    margin: 50px;
+    height: 200px;
+}
