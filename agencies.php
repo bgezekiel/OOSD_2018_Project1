@@ -3,7 +3,7 @@ class dataAccess{
 
 	public function getdata($query){
 
-		$mysqli = new mysqli("localhost", "muhammad","saitstudent","travelexperts");
+		$mysqli = new mysqli("localhost", "root","","travelexperts");
 
 /* check connection */
 if ($mysqli->connect_errno) {
@@ -19,11 +19,11 @@ if ($result = $mysqli->query($query)) {
 
 	$keys=array_keys($row);
 		
-foreach ($keys as $key) {
+//foreach ($keys as $key) {
 	
 	
-	print($key." ");
-	}
+	//print($key." ");
+	//}
 
 print("<br>");
 
@@ -52,7 +52,7 @@ $myobj=new dataAccess();
 //$query = "SELECT AgtFirstName,AgtMiddleInitial,AgtLastName,AgtBusPhone,AgtEmail,AgtPosition,agncycity from agents,agencies where agents.AgencyId=agencies.AgencyId";
 //$myobj->getdata($query);
 
-$myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'");
+//$myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'");
 
 
 ?>
