@@ -10,42 +10,10 @@
           <script src="popper/popper.min.js"></script>
         <script src="jquery/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
-            
-$(document).ready(function(){
-    $("nav").mouseover(function(){
-        $("nav").css({"opacity": "1.0", "font-size": "200%"});
-        $("a").css({"color":"white"});
-           });
-           
-          $("nav").mouseleave(function(){
-        $("nav").css({"opacity": "0.5", "font-size": "100%"});
-           });
-             
-           
-});       </script>
-        
-        <style>
-            
-        </style>
-    
+
     </head>
     <body>
-       
-        <nav class="navbar navbar-expand-lg justify-content-end" style="background-color:darkblue; opacity:0.5;">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                 <a class="nav-link" href="">Item1</a>
-                 </li>
-                  <li class="nav-item">
-                 <a class="nav-link" href="">Item2</a>
-                 </li>
-            <li class="nav-item">
-                 <a class="nav-link" href="">Item3</a>
-                 </li>
-            </ul>
-     
-        </nav>
+    <?php include("nav.php")?>
         <div class="container">
           <div class="row align-items-start">
               <div class="col-lg-12"></div>
@@ -55,7 +23,7 @@ $(document).ready(function(){
             <div class="row">
                 <div class="col-lg-4"> 
       <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="myimages/logo.jpg" alt="Card image cap">
+          <img class="card-img-top" src="images/logo.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 align="center" class="card-text">EXPLORE THE HORIZON</h5>
   </div>
@@ -69,13 +37,13 @@ $(document).ready(function(){
      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <img class="d-block w-100" src="myimages/img1.jpg" alt="First slide">
+        <img class="d-block w-100" src="images/img1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="myimages/img2.jpg" alt="Second slide">
+        <img class="d-block w-100" src="images/img2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-        <img class="d-block w-100" src="myimages/img3.jpg" alt="Third slide">
+        <img class="d-block w-100" src="images/img3.jpg" alt="Third slide">
     </div>
   </div>
 </div> 
