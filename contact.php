@@ -24,24 +24,32 @@
  
   <div class="row">
     <div class="col-6">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 25rem;">
         <img class="card-img-top" src="images/agent.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Calgary Branch</h5>
-          <p class="card-text"><?php $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'"); ?></p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">
+            <?php 
+              $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'"); 
+            ?>
+          </p>
+          <a href="#" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>
 
   
-    <div class="col">
-      <div class="card" style="width: 18rem;">
+    <div class="col-6">
+      <div class="card" style="width: 25rem;">
         <img class="card-img-top" src="images/agent1.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Okotoks</h5>
-          <p class="card-text"><?php $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Okotoks'"); ?></p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text">
+            <?php 
+              $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Okotoks'"); 
+            ?>
+          </p>
+          <a href="#" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>

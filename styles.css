@@ -13,7 +13,8 @@ html, body {
     color: white;
 }
 
-.card-group {
-    margin: 50px;
-    height: 200px;
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
 }
