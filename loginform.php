@@ -58,6 +58,7 @@ header('Location:welcome.php');
 
   </head>
   <body>
+    <?php include("nav.php")?>
  <div class="container">
 	<div class="row">
 		<div class="col-4">

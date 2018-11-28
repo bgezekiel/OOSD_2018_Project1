@@ -172,6 +172,7 @@ postal Code
     </head>
     <body>
        <!-- bootstrap form and all its fields -->
+<?php include("nav.php")?>
  <div class="card" style="width:100%;">
 	 <div class="card-header" style="background-color:dodgerblue;" >
     Registration Form
