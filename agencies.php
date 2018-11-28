@@ -3,7 +3,7 @@ class dataAccess{
 
 	public function getdata($query){
 
-		$mysqli = new mysqli("localhost", "muhammad","saitstudent","travelexperts");
+		$mysqli = new mysqli("localhost", "root","","travelexperts");
 
 /* check connection */
 if ($mysqli->connect_errno) {
