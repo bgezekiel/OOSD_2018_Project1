@@ -38,7 +38,6 @@
       </div>
     </div>
 
-  
     <div class="col-6">
       <div class="card" style="width: 25rem;">
         <img class="card-img-top" src="images/agent1.jpg" alt="Card image cap">

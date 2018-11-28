@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,6 @@ if ($mysqli->connect_errno) {
 if ($result = $mysqli->query($query)) {
 
     /* fetch associative array */
-
     while ($row = $result->fetch_assoc()) {
 ?>
     <div class="col-4">
