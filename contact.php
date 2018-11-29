@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="images/world.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Bootstrap CSS-->
@@ -15,7 +14,7 @@
   <!--Navagation Bar-->
 <?php include("nav.php");?>
   <!--Jumbotron-->
-  <div class="jumbotron jumbotron-fluid" id="j0">
+  <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Planning your next vacation?</h1>
         <p class="lead">We would love to hear all about it! Contact one of our agents at a location near you.
@@ -34,12 +33,11 @@
               $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'"); 
             ?>
           </p>
-          <a href="#" class="btn btn-primary">Find an Agent!</a>
+          <a href="calgary.php" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>
 
-  
     <div class="col-6">
       <div class="card" style="width: 25rem;">
         <img class="card-img-top" src="images/agent1.jpg" alt="Card image cap">
@@ -50,11 +48,16 @@
               $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Okotoks'"); 
             ?>
           </p>
-          <a href="#" class="btn btn-primary">Find an Agent!</a>
+          <a href="okotoks.php" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>
    </div>
+
+ <!--Contact Information-->
+ <?php
+  include("footer.php");
+ ?>
   
   
 </body>
