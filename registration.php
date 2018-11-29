@@ -1,17 +1,14 @@
-
 <!DOCTYPE html>
 <!--
 Registration form and jquery validations, including regular expressions for emai, phone No and
 postal Code
 -->
-
 <html>
     <head>
         <title>Register Now</title>
-		
 		<!--Defined charset, responsiveness, called stylesheets and javascript libraries -->
-
         <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/world.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <script src="popper/popper.min.js"></script>
