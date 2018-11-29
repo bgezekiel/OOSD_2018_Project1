@@ -9,6 +9,7 @@
         <script src="popper/popper.min.js"></script>
         <script src="jquery/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     <style type="text/css">
 
     #j1 {
@@ -150,6 +151,9 @@
 			</div>
 			<div class="col-sm-1"></div>
 		</div>
-	</div>
+	</div><br />
+	<?php
+		include("footer.php");
+	?>
 </body>
 </html>
