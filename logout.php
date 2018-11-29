@@ -4,7 +4,7 @@
 session_start();
 if(session_destroy())
 {
-header("Location:loginform.php");
+header("Location:index.php");
 }
 session_destroy();
 

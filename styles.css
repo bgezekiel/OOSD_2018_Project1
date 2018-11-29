@@ -68,34 +68,3 @@ body {
 }
 
 
-/* to set the main container properties for the footer */
-.footer {
-    position: absolute;
-    margin: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    background-color: #0B4C7D;
-    height: 30px;
-}
-
-/* to set the border radius of images in the footer */
-.footer img {
-    border-radius: 20%;
-}
-
-/* to set the font size and color of the copyright in the footer */
-.footer .footer-left {
-    color: white;
-    font-size: 14px;
-    margin: 0;
-}
-
-/* to set the images in the footer to the right and background color
-.footer .footer-right {
-    float: right;
-    margin: 2px;
-    max-width: 180px;
-    background-color: black;
-}*/

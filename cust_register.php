@@ -74,7 +74,7 @@ $agent=9;
 //connect to database
  $mysqli = new mysqli("localhost","root","","travelexperts");
     	 
-	 $query="INSERT INTO customers(CustFirstName,CustLastName,CustAddress,CustCity,CustProv,CustPostal,CustCountry,CustHomePhone,CustBusPhone,CustEmail,AgentId,customer_login_id,cust_pass,cust_confirm_pass) VALUES('$_REQUEST[firstName]','$_REQUEST[lastName]','$_REQUEST[streetAddress]','$_REQUEST[city]','$_REQUEST[province]','$_REQUEST[postalCode]','$_REQUEST[country]','$_REQUEST[homePhone]','$_REQUEST[businessPhone]','$_REQUEST[cEmail]',$agent,'$_REQUEST[userId]','$_REQUEST[pass]','$_REQUEST[confirmPass]')";
+	 $query="INSERT INTO customers(CustFirstName,CustLastName,CustAddress,CustCity,CustProv,CustPostal,CustCountry,CustHomePhone,CustBusPhone,CustEmail,AgentId,customer_login_id,cust_pass,cust_confirm_pass) VALUES('$_REQUEST[firstName]','$_REQUEST[lastName]','$_REQUEST[streetAddress]','$_REQUEST[city]','$_REQUEST[province]','$_REQUEST[postalCode]','$_REQUEST[country]','$_REQUEST[homePhone]','$_REQUEST[businessPhone]','$_REQUEST[cEmail]','$agent','$_REQUEST[userId]','$_REQUEST[pass]','$_REQUEST[confirmPass]')";
 	 
 	 //execute the insert query and return ture or false based on the result
 if ($mysqli->query($query) === TRUE) 
