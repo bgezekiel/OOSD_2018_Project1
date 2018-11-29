@@ -51,6 +51,11 @@ body {
     color: White;
 }
 
+.containerlogin{
+    margin-top: 10%;
+    margin-left: 38%;
+}
+
 .container-fluid {
     margin: auto;
     margin-top: 2%;
