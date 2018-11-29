@@ -33,7 +33,7 @@
               $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Calgary'"); 
             ?>
           </p>
-          <a href="#" class="btn btn-primary">Find an Agent!</a>
+          <a href="calgary.php" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
               $myobj->getdata("select AgncyAddress,AgncyCity,AgncyProv,AgncyPostal,AgncyPhone from agencies where agncyCity='Okotoks'"); 
             ?>
           </p>
-          <a href="#" class="btn btn-primary">Find an Agent!</a>
+          <a href="okotoks.php" class="btn btn-primary">Find an Agent!</a>
         </div>
       </div>
     </div>
