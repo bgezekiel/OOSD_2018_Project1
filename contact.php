@@ -53,6 +53,11 @@
       </div>
     </div>
    </div>
+
+ <!--Contact Information-->
+ <?php
+  include("footer.php");
+ ?>
   
   
 </body>
