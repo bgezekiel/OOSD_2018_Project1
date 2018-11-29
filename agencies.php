@@ -25,15 +25,15 @@ if ($result = $mysqli->query($query)) {
 	//print($key." ");
 	//}
 
-//print("<br>");
+print("<br>");
 
 $values=array_values($row);
 
 foreach($values as $value){
-	print($value."<br>");
+	print($value."&nbsp;&nbsp; ");
 
 }
-//print("<br>");
+print("<br>");
 
         //printf ("%s (%s)\n", $row["AgtFirstName"], $row["AgtLastName"]);
     }
