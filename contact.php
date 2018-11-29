@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-   </div>
+   </div><br>
 
  <!--Contact Information-->
  <?php

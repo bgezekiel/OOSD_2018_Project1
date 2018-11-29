@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  $_SESSION['fname']="islam";
+  $_SESSION['id']="1";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +14,7 @@
         <script src="popper/popper.min.js"></script>
         <script src="jquery/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
     <style type="text/css">
 
     #j1 {
@@ -46,23 +51,6 @@
 				background-color: #A21313;
 				outline-color: #A21313;
 	}
-
-	.col-sm-3 {	border: solid 10px;
-				color: white;
-	}
-	#pac1 {	background-color: #2A2A2A;
-			border-color: #707171;
-	}
-	#pac2 { background-color: #0B4C7D;
-			border-color: #3F739F;
-	}
-	#pac3 {	background-color: #7F9418;
-			border-color: #85A14D;
-	}
-	#pac4 {	background-color: #A21313;
-			border-color: #AB3A3A;
-	}
-
     </style>
 </head>
 <body>
@@ -77,9 +65,11 @@
 	<div class="containerbox" id="package1">
 		<div class="row">
 			<div class="col-sm-1"></div>
-				<div class="col-sm-3" id="pac1">
+				<div class="col-sm-3">
 					<center>
-						<p>Polynesian Paradise</p>
+						<p>
+							<?php include("packageinfo2.php");?>
+						</p>
 					</center>
 				</div>
 				<div class="col-sm-7">
@@ -104,9 +94,9 @@
 					style="border: solid 15px white;">
 				</center>
 			</div>
-			<div class="col-sm-3" id="pac2">
+			<div class="col-sm-3">
 				<center>
-					<p>Polynesian Paradise</p>
+					<?php include("packageinfo1.php");?>
 				</center>
 			</div>
 			<div class="col-sm-1"></div>
@@ -117,9 +107,9 @@
 	<div class="containerbox" id="package3">
 		<div class="row">
 			<div class="col-sm-1"></div>
-				<div class="col-sm-3" id="pac3">
+				<div class="col-sm-3">
 					<center>
-						<p>Polynesian Paradise</p>
+						<?php include("packageinfo3.php");?>
 					</center>
 				</div>
 				<div class="col-sm-7">
@@ -144,14 +134,14 @@
 					style="border: solid 15px white;">
 				</center>
 			</div>
-			<div class="col-sm-3" id="pac4">
+			<div class="col-sm-3">
 				<center>
-					<p>Polynesian Paradise</p>
+					<?php include("packageinfo4.php");?>
 				</center>
 			</div>
 			<div class="col-sm-1"></div>
 		</div>
 	</div><br /><br />
-	<?php include("footer.php"); ?>
+	<?php include("footer_package.php");?>
 </body>
 </html>
