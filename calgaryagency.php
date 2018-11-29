@@ -38,10 +38,10 @@ if ($result = $mysqli->query($query)) {
             <img class="card-img-top" src="images/cap.jpg" alt="Card image cap">
             <div class="card-body">
             <p class="card-text">
-                <?php print("First Name: ".$row['AgtFirstName'] . "<br>" . "Last Name: ". $row['AgtLastName'] 
-                        . "<br>" . "Business Phone: ". $row['AgtBusPhone'] . "<br>" . "Email: ". $row['AgtEmail']
-                        . "<br>" . "Position: ". $row['AgtPosition'] . "<br>" . "<button type='button'>"."Send Email" . "</button>");
-                    ?>
+    <?php print("<b>"."First Name: "."</b>".$row['AgtFirstName'] . "<br>" . "<b>" . "Last Name: ". "</b>" . $row['AgtLastName'] 
+            . "<br>" . "<b>" . "Business Phone: ". "</b>" . $row['AgtBusPhone'] . "<br>" . "<b>" . "Email: ". "</b>" . $row['AgtEmail']
+            . "<br>" . "<b>" . "Position: ". "</b>" . $row['AgtPosition'] . "<br>" . "<button type='button'>"."Send Email" . "</button>");
+    ?>
             </p>
             </div>
         </div>
