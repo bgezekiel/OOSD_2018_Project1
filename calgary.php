@@ -20,6 +20,7 @@
     </div>
     <?php
         include("calgaryagency.php");
+        include("footer.php");
     ?>
 
 </html>
