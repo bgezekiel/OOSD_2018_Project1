@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Navigation Bar</title>
+    <title>Navigation Bar</title>
 </head>
 <body>
   <div class="list">

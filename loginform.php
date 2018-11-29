@@ -25,6 +25,7 @@ if(isset($_SESSION['name'])){
     <link href="styles.css" rel="stylesheet">
  
     <title>Login</title>
+    <link rel="shortcut icon" href="images/world.png" type="image/x-icon">
 	
 <script>
 
