@@ -66,7 +66,7 @@
     </style>
 </head>
 <body>
-	<?php include("nav.php") ?>
+	<?php include("nav.php"); ?>
 	  <!--Jumbotron-->
 	<div class="jumbotron" id="j1">
 			<h1 class="display-4">Book Your Vacation Today!</h1>
@@ -151,9 +151,7 @@
 			</div>
 			<div class="col-sm-1"></div>
 		</div>
-	</div><br />
-	<?php
-		include("footer.php");
-	?>
+	</div><br /><br />
+	<?php include("footer.php"); ?>
 </body>
 </html>
