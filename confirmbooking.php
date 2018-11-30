@@ -1,4 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="images/world.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Book Successful!</title>
+  <style>
+    .center_img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
 <?php
+include ("nav_logout.php");
+print("<br><br>");
 session_start();
 $mypkgid=$_SESSION['mypkgid'];
 $mycustid=$_SESSION['customerid'];
@@ -28,17 +51,17 @@ $supplierid=$_REQUEST['supplier'];
 }
 
 if($classid==="Business Class"){
-	$classid="BSN";
+  $classid="BSN";
 }
 if($classid==="Delux"){
-	$classid="DLX";
+  $classid="DLX";
 }
 
 if($classid==="Economy"){
-	$classid="ECN";
+  $classid="ECN";
 }
 if($classid==="First Class"){
-	$classid="FST";
+  $classid="FST";
 }
 
 
@@ -52,8 +75,8 @@ $mysqli = new mysqli("localhost", "root","","travelexperts");
 if ($mysqli->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
-							}
-	$query="SELECT * FROM packages where PackageId=$pkgid";
+              }
+  $query="SELECT * FROM packages where PackageId=$pkgid";
 
 if ($result = $mysqli->query($query)) {
     while ($row = $result->fetch_assoc()) {
@@ -89,7 +112,7 @@ if($mysqli->connect_error)
 VALUES('$date','$bookingno','$travlercount','$mycustid','$tripid','$mypkgid')";
 if ($mysqli->query($query) === TRUE) 
   {    
-      print("Booking Record Created ");
+      print("<center>Booking Record Created and updated Successfully!<br></center>");
   } 
   else 
   {   
@@ -110,17 +133,17 @@ if($mysqli->connect_error)
 
 if ($result = $mysqli->query($bquery)) {
     while ($row = $result->fetch_assoc()) {
-	$bookingid=$row["BookingId"];
+  $bookingid=$row["BookingId"];
 
-	}
-	
-	}
-	 $mysqli->close(); 
-	//echo "<br><br>".$bookingid;
+  }
+  
+  }
+   $mysqli->close(); 
+  //echo "<br><br>".$bookingid;
 
 
 
-	
+  
   $mysqli=new mysqli("localhost","root","","travelexperts");
 if($mysqli->connect_error)
 {
@@ -136,27 +159,17 @@ if($mysqli->connect_error)
 VALUES('$Itinaryno','$PkgStartDate','$PkgEndDate','$PkgDesc','$PkgDesc','$PkgBasePrice','$PkgAgencyCommission','$bookingid','$regionid','$classid','$feeId','$supplierid')";
 if ($mysqli->query($query1) === TRUE) 
   {    
-      print(" and updated Successfully<br> You will receive a Confirmation Email Shortly");
+      print("<center>You will receive a Confirmation Email Shortly</center><br/>");
   } 
   else 
   {   
       echo "Error: " . "<br>" . $mysqli->error;
   }
-  
-  
+
   $mysqli->close();  
-  print("<br> <a href=logout.php> Clcik Here to Logout</a>");
-
-
-
-
-
-
-
-
-
-
-
-
+  print("<center><a href=logout.php> Click Here to Logout</a></center><br>");
+  echo "<img src='images/img5.jpg' class='center_img' alt='Happy City'><br><br>";
+include("footer.php");
 ?>
-
+</body>
+</html>

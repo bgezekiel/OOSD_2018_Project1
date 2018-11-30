@@ -12,15 +12,6 @@
             <li class="nav-item">
               <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="packages.php">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registration.php">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact</a>
-            </li>
           </ul>
       </nav>
     </div>

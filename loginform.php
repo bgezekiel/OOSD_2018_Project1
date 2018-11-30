@@ -1,7 +1,10 @@
 <?php
 /*Customer login form, checks if the session is set and customer is valied then redirected to welcome 
   page, otherwise shows customer to provide login to start the session*/
-  session_start();
+  // if (!session_start())
+  // {
+  //  session_start();
+  //}
 
   if(isset($_SESSION['name']))
   {
@@ -73,6 +76,9 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="custpass" name="custpass" placeholder="Password">
               </div>
+              <center>
+                  Don't have an account? <a href="registration.php">Sign Up Here</a>
+              </center><br />
               <button type="submit" class="btn btn-primary" id="sbutton">Submit</button>
             </form>
             </div>
